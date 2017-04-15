@@ -8,9 +8,9 @@
 
 	<link type="text/css" src="assets/css/style.css">
 
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 <body>
@@ -18,9 +18,6 @@
   		<h1>Crystals Collector!</h1>
 	</div>
 
-
-	<!-- <div class="row"> -->
-	<!-- <div class="col-md-12"> -->
 	<div class="panel panel-default">
  		 <div class="panel-heading">
     		<h3 class="panel-title">Instructions</h3>
@@ -39,6 +36,7 @@
   		</div>
   	</div>
 	</div>
+
 <div class="container">
 		<div class="row">
 
@@ -46,7 +44,7 @@
 				<div class="panel panel-default">
  					 <div class="panel-heading">
  						 <div id="randomNumber">
- 						 <p>Random Number</p>
+ 						 <p>Random Number to Match</p>
  					 	</div>
  					</div>
 				</div>
@@ -55,8 +53,8 @@
 				<div class="panel panel-default">
  				 	<div class="panel-heading">
  						 <div id="counter">
- 						 <p>Wins:</p>
- 						 <p>Losses:</p>
+ 						 <p id="wins">Wins:</p>
+ 						 <p id="losses">Losses:</p>
  						 </div>
  				 	</div>
  				</div>
@@ -64,28 +62,28 @@
 		</div>
 
 	<div class="row">
-  		<div class="col-md-3">
-    		<a href="#" class="crystal">
-     		 <img src="#" alt="">
-   			 </a>
+  		<div class="col-xs-6 col-md-3">
+    		<div class="crystal" id="emerald">
+     		 <img src="assets/images/Emerald.ico" alt="Emerald">
+     		 </div>
  		 </div>
 
-  		<div class="col-md-3">
-    		<a href="#" class="crystal">
-     		 <img src="#" alt="">
-   			 </a>
+  		<div class="col-xs-6 col-md-3">
+    		<div class="crystal" id="gem">
+     		 <img src="assets/images/Gem.png" alt="Gem">
+   			 </div>
  		 </div>
 
-    	<div class="col-md-3">
-   			 <a href="#" class="crystal">
-     		 <img src="#" alt="">
-  			  </a>
+    	<div class="col-xs-6 col-md-3">
+   			 <div class="crystal" id="sapphire">
+     		 <img src="assets/images/Sapphire.ico" alt="Sapphire">
+  			  </div>
  		 </div>
 
-    	<div class="col-md-3">
-   			 <a href="#" class="crystal">
-     		 <img src="#" alt="">
-  			  </a>
+    	<div class="col-xs-6 col-md-3">
+   			 <div class="crystal" id="zircon">
+     		 <img src="assets/images/Zircon.png" alt="Zircon">
+  			  </div>
  		 </div>
  	</div>
 
@@ -94,9 +92,11 @@
 			<div class="panel panel-default">
  		 		<div class="panel-heading">
    				 	<h3 class="panel-title">Your total score is: </h3>
- 			 	</div>
- 			 		<div class="panel-body">
- 	 				</div>
+ 			 		</div>
+ 			 			<div class="panel-body">
+ 			 			<div id="points">
+ 			 		</div>
+ 	 			</div>
  	 		</div>
  		 </div>
 	</div>
